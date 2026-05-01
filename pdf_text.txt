@@ -1,0 +1,190 @@
+1 
+  
+ 
+ 
+Department of CSE -CYBER SECURITY  
+ 
+Project Book Preparation Instructions  
+Page Setup / Formatting  
+Follow these standard formatting rules:  
+ Paper size:  A4 
+ Font:  Times New Roman  
+ Font size:  
+o Headings → 14 Bold  
+o Sub-headings → 12 Bold  
+o Normal text → 12  
+ Line spacing:  1.5 
+ Margins:  
+o Left → 1.5 inch  
+o Right → 1 inch  
+o Top → 1 inch  
+o Bottom → 1 inch  
+ Text alignment:  Justified  
+ Page numbering:  Bottom cent er 
+ 
+Structure of  B. Tech Project Report  
+1. Title Page  
+Contains:  
+ Project title  
+ Submitted by (Student name & R oll number)  
+ Degree (B.  Tech .) 
+ Department  
+ College name  
+ Academic year  
+ Guide name  
+
+2 
+  
+2. Certificate Page  
+Signed by:  
+ Project guide  
+ Project Coordinator  
+ Head of Department (HOD)  
+This page confirms that the project was completed under supervision.  
+ 
+3. Acknowledgement  
+Thank the people who helped:  
+ Management  
+ Principal  
+ Head of the Department  
+ Project guide  
+ Teaching and Non teaching staff  
+ Friends and Family  
+Usually 1 page . 
+ 
+4. Declaration  
+Statement by studen t declaring that:  
+The project is an original work carried out by the student and not copied from any other 
+source.  
+ 
+5. Abstract  
+Short summary of the project:  
+ Problem statement  
+ Method used  
+ Key results  
+ Applications  
+Length:  150–300 words.  
+3 
+  
+ 
+6. Table of Contents  
+Lists all chapters with page numbers.  
+Example:  
+1. Introduction  
+2. Literature Survey  
+3. System Analysis  
+4. System Design  
+5. Implementation  
+6. Results & Discussion  
+7. Conclusion & Future Work  
+8. References  
+ 
+7. List of Figures  
+If diagrams, graphs, flowcharts are used.  
+Example:  
+ Fig 3.1 System Architecture  
+ Fig 4.2 Flowchart  
+ 
+8. List of Tables  
+If tables are included.  
+Example:  
+ Table 2.1 Comparison of Existing Sy stems  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+  
+Main Chapters  
+Chapter 1: Introduction  
+Include:  
+ Background of the project  
+ Problem statement  
+ Objectives  
+ Scope of the project  
+ Organization of the report  
+ Usually 4–6 pages  
+Chapter 2: Literature Survey  
+Explain existing work / technologies  related to your project.  
+Include:  
+ Previous research  
+ Existing systems  
+ Comparison with your approach  
+ Usually 6–10 pages  
+Chapter 3: System Analysis  
+Explain:  
+ Existing system  
+ Problems in existing system  
+ Proposed system  
+ Advantages of proposed system  
+Include diagrams if possible.  
+Chapter 4: System Design  
+Describe the architecture and design . 
+Include:  
+ Block diagram  
+ System architecture  
+ Flowcharts  
+ Data flow diagrams (DFD)  
+ UML diagrams (for software projects)  
+5 
+  
+Chapter 5: Implementation  
+Explain:  
+ Hardware used  
+ Software used  
+ Algorithms  
+ Modules developed  
+ Screenshots / circuit diagrams  
+ 
+Chapter 6: Results and Discussion  
+Include:  
+ Output results  
+ Testing results  
+ Performance analysis  
+ Screenshots / graphs  
+ 
+Chapter 7: Conclus ion 
+Explain:  
+ What the project achieved  
+ Advantages  
+ Limitations  
+Usually 1–2 pages  
+ 
+Chapter 8: Future Scope  
+Explain how the project can be improved in future.  
+Example:  
+ Adding AI features  
+ Cloud integration  
+ Mobile application support  
+ 
+ 
+6 
+  
+References  
+List all sources used.  
+Example formats:  
+Book:  
+Author Name, Book Title, Publisher, Year.  
+Website:  
+https://www.example.com  
+Research Paper:  
+Author, Paper Title, Journal Name, Year.  
+ 
+ 
+Appendices (Optional)  
+Include:  
+ Source code  
+ Extra diagrams  
+ Survey forms  
+ 
+Recommended Length  
+Typical B. Tech Project Report:  
+ Project → 40–60 pages  
+ 

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 150 80% 90%;
+
+    --card: 222 40% 9%;
+    --card-foreground: 150 30% 85%;
+
+    --popover: 222 40% 9%;
+    --popover-foreground: 150 30% 85%;
+
+    --primary: 150 100% 45%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 14%;
+    --secondary-foreground: 150 30% 80%;
+
+    --muted: 222 30% 12%;
+    --muted-foreground: 220 15% 50%;
+
+    --accent: 180 100% 40%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 6%;
+
+    --success: 150 100% 45%;
+    --success-foreground: 222 47% 6%;
+
+    --border: 222 30% 16%;
+    --input: 222 30% 14%;
+    --ring: 150 100% 45%;
+
+    --radius: 0.5rem;
+
+    --cyber-glow: 0 0 20px hsl(150 100% 45% / 0.3);
+    --cyber-glow-accent: 0 0 20px hsl(180 100% 40% / 0.3);
+    --gradient-cyber: linear-gradient(135deg, hsl(150 100% 45%), hsl(180 100% 40%));
+    --gradient-dark: linear-gradient(180deg, hsl(222 47% 6%), hsl(222 40% 9%));
+    --gradient-card: linear-gradient(135deg, hsl(222 40% 9%), hsl(222 30% 12%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0f1c;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.5), 0 0 40px rgba(16, 185, 129, 0.2);
+  }
+
+  .text-glow-accent {
+    text-shadow: 0 0 10px hsl(180 100% 40% / 0.5), 0 0 30px hsl(180 100% 40% / 0.2);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px hsl(150 100% 45% / 0.15), inset 0 0 10px hsl(150 100% 45% / 0.05);
+  }
+
+  .border-glow-active {
+    box-shadow: 0 0 20px hsl(150 100% 45% / 0.4), 0 0 40px hsl(150 100% 45% / 0.2), inset 0 0 20px hsl(150 100% 45% / 0.1);
+    border-color: hsl(150 100% 45% / 0.8) !important;
+  }
+
+  .card-cyber {
+    background: var(--gradient-card);
+    border: 1px solid hsl(222 30% 16%);
+    box-shadow: 0 0 15px hsl(150 100% 45% / 0.05);
+  }
+
+  .card-cyber-hover {
+    background: var(--gradient-card);
+    border: 1px solid hsl(222 30% 16%);
+    box-shadow: 0 0 15px hsl(150 100% 45% / 0.05);
+    transition: all 0.2s ease;
+  }
+
+  .card-cyber-hover:hover {
+    border-color: hsl(150 100% 45% / 0.3);
+    box-shadow: 0 0 20px hsl(150 100% 45% / 0.1);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(150 100% 45% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(150 100% 45% / 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-main {
+    background-color: #0a0f1c;
+  }
+
+  .metric-card-glow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .metric-card-glow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, hsl(150 100% 45% / 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .stat-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: hsl(150 100% 45%);
+    text-shadow: 0 0 20px hsl(150 100% 45% / 0.5);
+  }
+
+  .shield-glow {
+    filter: drop-shadow(0 0 20px hsl(150 100% 45% / 0.6)) drop-shadow(0 0 40px hsl(150 100% 45% / 0.3));
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, hsl(150 100% 35% / 0.3), hsl(150 100% 45% / 0.1));
+    border: 1px solid hsl(150 100% 45% / 0.5);
+    color: hsl(150 100% 45%);
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, hsl(150 100% 35% / 0.5), hsl(150 100% 45% / 0.2));
+    border-color: hsl(150 100% 45% / 0.8);
+    box-shadow: 0 0 20px hsl(150 100% 45% / 0.3), 0 0 40px hsl(150 100% 45% / 0.1);
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid hsl(222 30% 25%);
+    color: hsl(220 15% 65%);
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.2s ease;
+  }
+
+  .btn-ghost:hover {
+    border-color: hsl(150 100% 45% / 0.4);
+    color: hsl(150 80% 90%);
+  }
+
+  .severity-safe { color: hsl(150 100% 45%); }
+  .severity-medium { color: hsl(38 92% 50%); }
+  .severity-high { color: hsl(25 95% 55%); }
+  .severity-critical { color: hsl(0 72% 51%); }
+
+  .upload-zone {
+    border: 2px dashed hsl(222 30% 25%);
+    transition: all 0.3s ease;
+  }
+
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: hsl(150 100% 45% / 0.8);
+    box-shadow: 0 0 30px hsl(150 100% 45% / 0.15), inset 0 0 30px hsl(150 100% 45% / 0.05);
+  }
+
+  .port-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: hsl(150 100% 45% / 0.1);
+    border: 1px solid hsl(150 100% 45% / 0.2);
+    color: hsl(150 100% 45%);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes scan {
+  from { top: 0%; }
+  to { top: 100%; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+@keyframes data-flash {
+  0% { background: hsl(150 100% 45% / 0.08); }
+  100% { background: transparent; }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-scan { animation: scan 4s linear infinite; }
+.animate-fade-in { animation: fade-in 0.4s ease-out forwards; }
+.animate-slide-in { animation: slide-in 0.3s ease-out forwards; }
+.animate-pulse-ring { animation: pulse-ring 1.5s cubic-bezier(0.66, 0, 0, 1) infinite; }
+.animate-data-flash { animation: data-flash 0.5s ease-out forwards; }

@@ -1,0 +1,35 @@
+Problem statement:
+A comprehensive ML-powered IDS platform is built to analyze PCAP/CSV network traffic and detect intrusions. It simulates real-time and batch analysis with multiple ML models to classify flows as normal or attack.
+
+Why this problem matters:
+Network attacks are frequent and damaging; enterprises need early and accurate anomaly detection. Existing systems can be slow, rigid, or opaque, so a modern adaptive IDS is critical.
+
+Proposed solution:
+A multi-model intrusion detection system using Random Forest, XGBoost, SVM, and KNN backends. FastAPI serves offline uploads and WebSocket live flow simulation for responsive insights.
+
+How it works:
+Uploads are parsed, approximate flow count is derived, then each flow is scored by the selected model. Live mode streams synthetic flows with predictions, confidences, and risk severity.
+
+Tech stack:
+Python FastAPI backend, NumPy, asyncio, and mock ML in `backend/ml_pipeline.py`. Frontend uses React+TypeScript with Vite and shadcn-ui (Tailwind). Full-stack repo has Node and Python parts.
+
+Feasibility:
+Fully feasible as a prototype: no hard external dependencies except standard Python packages and Node dev environment. Extending to true trained models is straightforward by replacing mocks with saved model serializers.
+
+Target user:
+Network security analysts, SOC teams, and academic researchers testing IDS behavior. Also useful for students learning ML-based threat detection in flow data.
+
+Existing solutions:
+IDS tools like Snort, Suricata, Zeek, and ML research frameworks are common. Those are powerful but often complex to configure and integrate, so this project offers a simplified rapid-testing alternative.
+
+Challenges/risks:
+Mock predictions must be replaced with real high-quality model inference to avoid false positives/negatives. Real production needs secure log ingestion, data labeling, model drift handling, and performance tuning.
+
+What makes this idea unique:
+Integrated model chooser (`/api/models`), data upload analysis, and low-latency WebSocket flow simulation in one codebase. Designed for quick experimentation with multiple model characteristics.
+
+Expected impact:
+Reduce attack detection cycle time in proof-of-concept environments. Encourage data-driven security by enabling users to compare models and understand severity distribution quickly.
+
+Describe the idea in one line (30 to 50 characters):
+"Fast multi-model ML intrusion detection platform"
